@@ -15,7 +15,6 @@ struct UserDTO : Decodable {
 
 extension UserDTO {
     static func fetchUsers() async throws -> [UserDTO] {
-        /// Geological data provided by the U.S. Geological Survey (USGS). See ACKNOWLEDGMENTS.txt for additional details.
         let url = URL(string: Constants.followersEndPoint)!
 
         let session = URLSession.shared
