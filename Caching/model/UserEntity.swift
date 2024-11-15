@@ -21,13 +21,5 @@ class UserEntity {
     }
 }
 
-
-extension UserEntity {
-    
-    static func totalQuakes(modelContext: ModelContext) -> Int {
-        (try? modelContext.fetchCount(FetchDescriptor<UserEntity>())) ?? 0
-    }
-}
-
 // Ensure that the model's conformance to Identifiable is public.
 extension UserEntity: Identifiable {}
