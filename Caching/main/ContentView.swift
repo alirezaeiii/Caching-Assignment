@@ -9,7 +9,6 @@ import SwiftUI
 import SwiftData
 
 struct ContentView: View {
-    @Environment(ViewModel.self) private var viewModel
     @Environment(\.modelContext) private var modelContext
     @Environment(\.scenePhase) private var scenePhase
     
@@ -35,17 +34,11 @@ struct ContentView: View {
                     ContentUnavailableView("Refresh to load earthquakes", systemImage: "globe")
                 }
             }
-            .onChange(of: scenePhase) { _, scenePhase in
-                if scenePhase == .active {
-                    viewModel.update(modelContext: modelContext)
-                }
-            }
         }
     }
 }
 
 #Preview {
     ContentView()
-        .environment(ViewModel())
         .modelContainer(for: UserEntity.self, inMemory: true)
 }

@@ -41,11 +41,3 @@ extension UserEntity {
         .init(id: 1, login: "Ali", avatarUrl: "https://avatars.githubusercontent.com/u/2465559?v=4")
     }
 }
-
-extension ViewModel {
-    static var preview: ViewModel {
-        let model = ViewModel()
-        model.totalQuakes = 8
-        return model
-    }
-}
