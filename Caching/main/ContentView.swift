@@ -10,7 +10,6 @@ import SwiftData
 
 struct ContentView: View {
     @Environment(\.modelContext) private var modelContext
-    @Environment(\.scenePhase) private var scenePhase
     
     @Query private var users: [UserEntity]
     
@@ -31,7 +30,7 @@ struct ContentView: View {
             }
             .overlay {
                 if users.count == 0 {
-                    ContentUnavailableView("Refresh to load earthquakes", systemImage: "globe")
+                    ContentUnavailableView("Refresh to load followers", systemImage: "globe")
                 }
             }
         }
