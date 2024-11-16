@@ -16,7 +16,7 @@ struct UserDTO : Decodable {
 extension UserDTO {
     static func fetchUsers() async throws -> [UserDTO] {
         let url = URL(string: Constants.followersEndPoint)!
-
+        
         let session = URLSession.shared
         guard let (data, response) = try? await session.data(from: url),
               let httpResponse = response as? HTTPURLResponse,
@@ -24,7 +24,7 @@ extension UserDTO {
         else {
             throw DownloadError.missingData
         }
-
+        
         do {
             // Decode the GeoJSON into a data model.
             let jsonDecoder = JSONDecoder()
@@ -36,9 +36,9 @@ extension UserDTO {
     }
     
     private struct Constants {
-            private static let endPoint = "https://api.github.com/users/alirezaeiii/"
-            static let followersEndPoint = endPoint + "followers"
-        }
+        private static let endPoint = "https://api.github.com/users/alirezaeiii/"
+        static let followersEndPoint = endPoint + "followers"
+    }
 }
 
 enum DownloadError: Error {
