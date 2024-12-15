@@ -65,9 +65,9 @@
 		41D0DCE52CE7C7D7002793E8 /* Caching */ = {
 			isa = PBXGroup;
 			children = (
-				41D0DCFB2CE7D225002793E8 /* main */,
-				41D0DD002CE7DF10002793E8 /* detail */,
-				41D0DCF42CE7C7FE002793E8 /* model */,
+				41D0DCFB2CE7D225002793E8 /* Main */,
+				41D0DD002CE7DF10002793E8 /* Detail */,
+				41D0DCF42CE7C7FE002793E8 /* Model */,
 				41D0DCE62CE7C7D7002793E8 /* CachingApp.swift */,
 				41D0DCEA2CE7C7D8002793E8 /* Assets.xcassets */,
 				41D0DCEC2CE7C7D8002793E8 /* Preview Content */,
@@ -85,31 +85,31 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		41D0DCF42CE7C7FE002793E8 /* model */ = {
+		41D0DCF42CE7C7FE002793E8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				41D0DCF52CE7C850002793E8 /* UserEntity.swift */,
 				41D0DCF72CE7C933002793E8 /* UserDTO.swift */,
 				41D0DCF92CE7CAFD002793E8 /* UserEntity+UserDTO.swift */,
 			);
-			path = model;
+			path = Model;
 			sourceTree = "<group>";
 		};
-		41D0DCFB2CE7D225002793E8 /* main */ = {
+		41D0DCFB2CE7D225002793E8 /* Main */ = {
 			isa = PBXGroup;
 			children = (
 				41D0DCE82CE7C7D7002793E8 /* ContentView.swift */,
 				41D0DCFC2CE7D36F002793E8 /* UserRow.swift */,
 			);
-			path = main;
+			path = Main;
 			sourceTree = "<group>";
 		};
-		41D0DD002CE7DF10002793E8 /* detail */ = {
+		41D0DD002CE7DF10002793E8 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
 				41D0DCFE2CE7D438002793E8 /* DetailView.swift */,
 			);
-			path = detail;
+			path = Detail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
